@@ -1,0 +1,172 @@
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Estilo para as imagens do carousel */
+.carousel-slide {
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-slide img:first-child {
+    display: block;
+}
+.carousel-btn.prev {
+    left: 10px;
+    top: 300px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+    top: 300px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.sobre h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 20px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    z-index: 2;
+    text-shadow: 20PX 20PX 20PX rgb(0, 0, 0, 5);
+}
+
+.texto {
+    padding-right: 20px;
+    position: relative;
+    font-style: italic;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+    text-align: right;
+    margin-left: 40%;
+}
+
+.sobre {
+    height: 900PX;
+    display: flex;
+    background-image: url(https://cdn.discordapp.com/attachments/925141025331228775/1287473565586817075/Design_sem_nome_10.png?ex=66f1acb2&is=66f05b32&hm=1490b40e3b9cff8033405e7f5f01311a1391e21e67ee8e5279cd4e392c9a8722&);
+    background-size: cover;
+}
+.carousel-btn.prev {
+    display: none;
+}
+
+.carousel-btn.next {
+    display: none;
+}
+@media (max-width: 1024px) { 
+.sobre {
+    background-size: cover;
+    height: auto;
+    /* Ajusta a altura para se adaptar ao conteúdo */
+    padding: 20px;
+    text-align: center;
+    /* Centraliza o texto para melhor legibilidade */
+}
+.sobre h2 {
+    font-size: 40px;
+    /* Ajusta o tamanho da fonte para telas menores */
+    text-align: center;
+    /* Centraliza o texto */
+    top: 330px;
+    /* Ajusta a posição do texto */
+    right: 0;
+    /* Ajusta a posição do texto */
+    margin: 30px;
+    /* Centraliza horizontalmente */
+}
+
+.sobre p {
+    font-size: 18px;
+    /* Ajusta o tamanho da fonte para telas menores */
+    text-align: center;
+    /* Centraliza o texto */
+    position: static;
+    /* Remove o posicionamento absoluto */
+    margin: 20px auto;
+    /* Ajusta o espaçamento ao redor do texto */
+    padding: 20px;
+    max-width: 90%;
+    /* Limita a largura do texto */
+    left: 0;
+    /* Ajusta a posição do texto */
+    right: 0;
+    /* Ajusta a posição do texto */
+    top: 0;
+    /* Ajusta a posição do texto */
+}
+
+}
+@media (max-width: 480px) {
+.texto {
+    margin-left: 10px;
+    text-align: center;
+    padding-right: 0;
+}
+
+.sobre {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.sobre p {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 90%;
+}
+
+.icones {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.icones img {
+    width: 80px;
+    margin: 10px auto;
+}
+
+.icones p {
+    font-size: 14px;
+    margin-top: 5px;
+} 
+}

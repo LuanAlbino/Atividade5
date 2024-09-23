@@ -1,0 +1,99 @@
+.sobre {
+    height: 900PX;
+    display: flex;
+    background-image: url(https://cdn.discordapp.com/attachments/925141025331228775/1287473565586817075/Design_sem_nome_10.png?ex=66f1acb2&is=66f05b32&hm=1490b40e3b9cff8033405e7f5f01311a1391e21e67ee8e5279cd4e392c9a8722&);
+    background-size: cover;
+}
+.servicos { 
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+.servicos h1 { 
+    text-align: center;
+}
+.icones {
+    display: flex;
+    /* Alinha as divs em uma linha horizontal */
+    justify-content: space-around;
+    /* Espaçamento uniforme entre os itens */
+    align-items: center;
+    /* Alinha verticalmente os itens */
+    padding: 30px;
+    /* Espaçamento ao redor dos ícones */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.icones div {
+    flex: 1 1 calc(33.33% - 40px); /* Define a largura dos ícones para ocupar 1/3 do espaço, considerando gaps */
+    box-sizing: border-box;
+    text-align: center;
+    /* Centraliza o texto e a imagem */
+}
+
+.icones img {
+    width: 100px;
+    /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    /* Centraliza a imagem dentro da div */
+}
+
+.icones p {
+    margin-top: 10px;
+    /* Espaço entre a imagem e o texto */
+    font-size: 16px;
+    /* Tamanho do texto */
+    color: #333;
+    /* Cor do texto, pode ser ajustada conforme o design */
+}
+.lazer {
+    text-align: center; /* Centraliza o conteúdo dentro da área lazer */
+    width: 100%; /* Ocupe toda a largura do contêiner pai */
+}
+
+.lazer h1 {
+    padding: 20px;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+.imagens h3{
+    text-align: center;
+}
+.imagens {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens uniformemente com espaço ao redor */
+    align-items: center; /* Centraliza verticalmente os itens */
+    flex-wrap: wrap;   /* Permite que os itens quebrem a linha, se necessário */
+    /* Espaço superior para separar de outros conteúdos */
+}
+
+.imagens img {
+    padding: 20px;
+    max-width: 400px; /* Ajuste o tamanho conforme necessário */
+    align-items: center;
+}
+.imagens p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+padding: 10px;}
+@media (max-width: 480px) {
+.icones {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.icones img {
+    width: 80px;
+    margin: 10px auto;
+}
+
+.icones p {
+    font-size: 14px;
+    margin-top: 5px;
+} 
+}

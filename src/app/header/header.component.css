@@ -1,0 +1,157 @@
+
+.header-container {
+    height: 130px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    /* Garante que o padding seja considerado no tamanho total */
+}
+
+.header-image {
+    width: 100px;
+    height: auto;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Centraliza a imagem horizontalmente */
+
+}
+
+.hamburger {
+    display: none;
+    /* Escondido por padrão em telas grandes */
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.botao {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#marcacao {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 0px;
+    border-radius: 6px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 15px auto;
+    /* Centraliza o botão e ajusta o espaçamento */
+    margin-left: 40px;
+    align-items: center;}
+
+#marcacao:hover {
+    background-color: #f1cd30;
+}
+.menu-items a {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.menu-items a:hover {
+    color: orange;
+}
+.header-image {
+    width: 100px;
+    height: auto;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;} 
+
+@media (max-width: 1024px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        align-items: center;
+    }
+
+    .menu-items a {
+        color: rgb(255, 255, 255);
+        margin-left: 0px;
+        text-decoration: none;
+        text-align: left;
+        margin: 20px;
+    }
+
+    .header-image {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        top: 60px;
+        /* Ajusta conforme necessário */
+        padding: 10px;
+    }
+
+    .menu-items a:hover {
+        color: orange;
+
+    }
+
+    .menu-items a {
+        margin: 10px 0;
+        width: 100%;
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .header-container {
+        padding: 5px;
+    }
+
+    .hamburger {
+        font-size: 25px;
+        top: 5px;
+        right: 10px;
+    }
+
+    .header-image {
+        width: 80px;
+        /* Ajusta o tamanho da imagem para telas menores */
+    }
+
+    .menu-items a:hover {
+        color: orange;
+
+    }
+
+    .menu-items a {
+        font-size: 14px;
+        /* Ajusta o tamanho do texto para telas menores */
+        margin-left: 0px;
+    }}
